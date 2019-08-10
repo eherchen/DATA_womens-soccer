@@ -1,0 +1,24 @@
+ .legend { 
+        border: 5px solid black;
+        font-weight: bold;
+        color: grey;
+        text-align: left;
+        width: 150px;
+        height: 110px;
+        line-height: 18px;
+        background: white;
+        opacity: 1;
+    }
+    .legend i {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+    }
+    .legend square {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-top: 8px;
+    }

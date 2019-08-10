@@ -1,0 +1,1 @@
+web: gunicorn women_in-soccer.app:app
