@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DC Cameras</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="static/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="">Home</a> -->
+          <a class="navbar-brand" href="/">
+              <img src="static/images/world-cup.svg" width="35" height="35" class="d-inline-block align-top" alt="">
+            </a>
+          <!-- img src="/assets/images/dcflag.svg" -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/story">The Story<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Visualizations<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/equity">Equity</a>
+                      <a class="dropdown-item" href="/charts">The Data</a>
+                      <a class="dropdown-item" href="/locations">Locations</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href=""> </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+
+
+       <div class="hero4 text-center">
+      <br>
+
+        <img src="static/images/dcflag.svg" class="img-responsive" alt="DC Flag"> <!-- width="200" height="130" -->
+    </div>
+<br>
+
+
+      <div class="container">
+            <div class="jumbotron text-center">
+
+              <h1 class="display-4">Our story begins and ends here...  </h1>
+              <p class="lead">  </p>
+              <hr class="my-4">
+              {% for message in get_flashed_messages() %}
+                {{ message }}
+              {% endfor %}
+              
+            </div>
+      </div>
+
+
+        <div class="container text-center">
+
+            <section class="regular slider">
+		       <div>
+              <a href="/dataviz"><img src="static/images/crimestack.png">View Crime Trends</a>
+		       </div>
+
+		       <div>
+              <a href="/maps"><img src="static/images/map.png"> View Crime and Camera Map</a>
+		       </div>
+		        <div>
+              <a href="/datatable"><img src="static/images/datatables.png">Search the Data Tables</a>
+		       </div>
+
+		       <div>
+              <a href="http://opendata.dc.gov/"><img src="static/images/dcgov_logo.jpg">Visit DC Open Data</a>
+		       </div>
+		       <div>
+            <a href="https://ovsjg.dc.gov/page/private-security-camera-rebate-program"><img src="static/images/dcglasses.png">Learn about the Rebate Program</a>
+          </div>
+
+           <div>
+		    <a href="https://www.youtube.com/watch?v=7YvAYIJSSZY"><img src="static/images/neighbor.jpg">Are you being watched? </a>
+		       </div>
+
+
+		     </section>
+
+
+
+
+  </div>
+
+
+
+
+<script type="text/javascript">
+  $(document).on('ready', function() {
+
+    $(".regular").slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    });
+    $(".center").slick({
+      dots: true,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 5,
+      slidesToScroll: 3
+    });
+    $(".variable").slick({
+      dots: true,
+      infinite: true,
+      variableWidth: true
+    });
+     $('.single-item').slick({
+	arrows: true
+    });
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true
+    });
+  });
+</script>
+
+
+
+
+
+  <br>
+
+
+
+
+<footer class="jumbotron text-center" id="footer">
+
+    <p>© Copyright Team GELCAP, 2019</p>
+    <p></p>
+    <p><i><a href="https://github.com/leer2022/glowing-gelcap"><i class="fa fa-github fa-2x"></i></a></p>
+
+
+</footer>
+
+</body>
+
+</html>
+
+

@@ -18,38 +18,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <!-- <a class="navbar-brand" href="">Home</a> -->
-                <a class="navbar-brand" href="/">
-                    <img src="static/images/cctv.svg" width="35" height="35" class="d-inline-block align-top" alt="">
-                  </a>
-                <!-- img src="/assets/images/dcflag.svg" -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="">Home</a> -->
+          <a class="navbar-brand" href="/">
+              <img src="static/images/world-cup.svg" width="35" height="35" class="d-inline-block align-top" alt="">
+            </a>
+          <!-- img src="/assets/images/dcflag.svg" -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                      <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Visualizations<span class="sr-only">(current)</span></a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/dataviz">Data Charts</a>
-                            <a class="dropdown-item" href="/datatable">Data Tables</a>
-                            <a class="dropdown-item" href="/maps">Camera Map Plots</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/api">Get hAPI!</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="/logout">Logout</a>
-                    </li>
-                  </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/story">The Story<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Visualizations<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/equity">Equity</a>
+                      <a class="dropdown-item" href="/charts">The Data</a>
+                      <a class="dropdown-item" href="/locations">Locations</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href=""> </a>
                 </div>
-        </nav>
+              </li>
+            </ul>
+          </div>
+      </nav>
 
 
 
@@ -64,14 +61,13 @@
       <div class="container">
             <div class="jumbotron text-center">
 
-              <h1 class="display-4">DC.gov Rebate & Voucher Camera Program</h1>
-              <p class="lead">A comparision of the DC.gov camera program and its impact on crime and the community</p>
+              <h1 class="display-4">Our story begins and ends here...  </h1>
+              <p class="lead">  </p>
               <hr class="my-4">
               {% for message in get_flashed_messages() %}
                 {{ message }}
               {% endfor %}
-              <small><i>Click <a href="/logout">here</a> to logout. (You will be redirected to the login page.)</i></small>
-
+              
             </div>
       </div>
 

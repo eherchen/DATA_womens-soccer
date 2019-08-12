@@ -155,7 +155,7 @@ h2 text {
     padding: 20px;
     margin: 0;
     background: black;
-    background-image: url("hero/capital_caution.jpg");
+    background-image: url("hero/daretoshine.jpg");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
@@ -165,7 +165,7 @@ h2 text {
     margin-top: 200px;
     font-size: 0.1rem;
     animation: title 1.2s forwards linear;
-    color: white;
+    color: red;
   }
   
   .hero p {
@@ -173,7 +173,7 @@ h2 text {
     opacity: 0;
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
-    color: white;
+    color: red;
   }
   
 

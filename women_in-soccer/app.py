@@ -59,9 +59,21 @@ def create_connection(db_file):
 def home():
     return render_template('index.html')
 
-@app.route('/welcome')
-def welcome():
-    return render_template('welcome.html')  
+@app.route('/story')
+def story():
+    return render_template('story.html')  
+
+@app.route('/equity')
+def equity():
+    return render_template('equity.html')  
+
+@app.route('/locations')
+def locations():
+    return render_template('locations.html')  
+
+@app.route('/charts')
+def charts():
+    return render_template('charts.html')  
 
 # @app.route('/about')
 # def about():
