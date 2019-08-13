@@ -61,8 +61,8 @@
       <div class="container">
             <div class="jumbotron text-center">
 
-              <h1 class="display-4">Our story begins and ends here...  </h1>
-              <p class="lead">  </p>
+              <h1 class="display-4">Our story </h1>
+              
               <hr class="my-4">
               {% for message in get_flashed_messages() %}
                 {{ message }}
@@ -70,9 +70,19 @@
               
             </div>
       </div>
-
-
-
+<div class="container">
+      <div class="card col-md-3">
+          <h3 class="card-header">The Players</h3>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+          </div>
+          <img style="height: 200px; width: 100%; display: block;" src="static/images/teammembers.png" alt="Card image">
+          <!-- <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div> -->
+      </div>
+</div>
 
 
   <br>

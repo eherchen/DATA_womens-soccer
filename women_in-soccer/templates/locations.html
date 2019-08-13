@@ -60,7 +60,7 @@
       <div class="container">
             <div class="jumbotron text-center">
 
-              <h1 class="display-4">Our story begins and ends here...  </h1>
+              <h1 class="display-4"><i>Where the jerks are...</i> </h1>
               <p class="lead">  </p>
               <hr class="my-4">
               {% for message in get_flashed_messages() %}
@@ -71,33 +71,6 @@
       </div>
 
 
-        <div class="container text-center">
-
-            <section class="regular slider">
-		       <div>
-              <a href="/dataviz"><img src="static/images/crimestack.png">View Crime Trends</a>
-		       </div>
-
-		       <div>
-              <a href="/maps"><img src="static/images/map.png"> View Crime and Camera Map</a>
-		       </div>
-		        <div>
-              <a href="/datatable"><img src="static/images/datatables.png">Search the Data Tables</a>
-		       </div>
-
-		       <div>
-              <a href="http://opendata.dc.gov/"><img src="static/images/dcgov_logo.jpg">Visit DC Open Data</a>
-		       </div>
-		       <div>
-            <a href="https://ovsjg.dc.gov/page/private-security-camera-rebate-program"><img src="static/images/dcglasses.png">Learn about the Rebate Program</a>
-          </div>
-
-           <div>
-		    <a href="https://www.youtube.com/watch?v=7YvAYIJSSZY"><img src="static/images/neighbor.jpg">Are you being watched? </a>
-		       </div>
-
-
-		     </section>
 
 
 
@@ -107,36 +80,7 @@
 
 
 
-<script type="text/javascript">
-  $(document).on('ready', function() {
 
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-    $(".center").slick({
-      dots: true,
-      infinite: true,
-      centerMode: true,
-      slidesToShow: 5,
-      slidesToScroll: 3
-    });
-    $(".variable").slick({
-      dots: true,
-      infinite: true,
-      variableWidth: true
-    });
-     $('.single-item').slick({
-	arrows: true
-    });
-    $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
-      infinite: true
-    });
-  });
-</script>
 
 
 
