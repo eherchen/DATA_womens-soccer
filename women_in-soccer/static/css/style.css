@@ -166,14 +166,15 @@ h2 text {
     font-size: 0.1rem;
     animation: title 1.2s forwards linear;
     color: gold;
+
   }
   
-  .hero p {
+  .hero h3 {
     font-size: 2rem;
     opacity: 0;
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
-    color: #ff8c69;
+    color: gold;
   }
   
 
@@ -238,7 +239,7 @@ h2 text {
     padding: 20px;
     margin: 0;
     background: black;
-    background-image: url("https://download.unsplash.com/photo-1428550670225-15f007f6f1ba");
+    background-image: url("hero/daretoshine2.jpg");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
@@ -383,3 +384,6 @@ h2 text {
     }
   }
   
+.border-webkit{
+  -webkit-text-stroke: 2px black;
+}

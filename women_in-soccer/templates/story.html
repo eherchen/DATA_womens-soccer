@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DC Cameras</title>
+    <title>The Story</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <!-- <a class="navbar-brand" href="">Home</a> -->
           <a class="navbar-brand" href="/">
               <img src="static/images/world-cup.svg" width="35" height="35" class="d-inline-block align-top" alt="">
@@ -50,10 +50,10 @@
 
 
 
-       <div class="hero4 text-center">
+    <div class="hero4 text-center">
       <br>
 
-        <img src="static/images/dcflag.svg" class="img-responsive" alt="DC Flag"> <!-- width="200" height="130" -->
+      
     </div>
 <br>
 
@@ -72,74 +72,6 @@
       </div>
 
 
-        <div class="container text-center">
-
-            <section class="regular slider">
-		       <div>
-              <a href="/dataviz"><img src="static/images/crimestack.png">View Crime Trends</a>
-		       </div>
-
-		       <div>
-              <a href="/maps"><img src="static/images/map.png"> View Crime and Camera Map</a>
-		       </div>
-		        <div>
-              <a href="/datatable"><img src="static/images/datatables.png">Search the Data Tables</a>
-		       </div>
-
-		       <div>
-              <a href="http://opendata.dc.gov/"><img src="static/images/dcgov_logo.jpg">Visit DC Open Data</a>
-		       </div>
-		       <div>
-            <a href="https://ovsjg.dc.gov/page/private-security-camera-rebate-program"><img src="static/images/dcglasses.png">Learn about the Rebate Program</a>
-          </div>
-
-           <div>
-		    <a href="https://www.youtube.com/watch?v=7YvAYIJSSZY"><img src="static/images/neighbor.jpg">Are you being watched? </a>
-		       </div>
-
-
-		     </section>
-
-
-
-
-  </div>
-
-
-
-
-<script type="text/javascript">
-  $(document).on('ready', function() {
-
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-    $(".center").slick({
-      dots: true,
-      infinite: true,
-      centerMode: true,
-      slidesToShow: 5,
-      slidesToScroll: 3
-    });
-    $(".variable").slick({
-      dots: true,
-      infinite: true,
-      variableWidth: true
-    });
-     $('.single-item').slick({
-	arrows: true
-    });
-    $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
-      infinite: true
-    });
-  });
-</script>
-
-
 
 
 
@@ -148,14 +80,18 @@
 
 
 
-<footer class="jumbotron text-center" id="footer">
-
-    <p>© Copyright Team GELCAP, 2019</p>
-    <p></p>
-    <p><i><a href="https://github.com/eherchen/DATA_womens-soccer"><i class="fa fa-github fa-2x"></i></a></p>
-
-
-</footer>
+  <div class="container text-center">
+      <p><i><a href="https://github.com/eherchen/DATA_womens-soccer"><i class="fa fa-github fa-2x fa-secondary"></i></a></p>
+  </div>
+  
+  <footer class="jumbotron text-center bg-primary disabled" id="footer">
+  
+          <p>© Copyright Team GELCAP, 2019</p>
+          <p></p>
+          
+      
+      
+  </footer>
 
 </body>
 
