@@ -61,7 +61,7 @@
       <div class="container">
             <div class="jumbotron text-center">
 
-              <h1 class="display-4">Our story </h1>
+              <h1 class="display-4">The story </h1>
               
               <hr class="my-4">
               {% for message in get_flashed_messages() %}
@@ -85,10 +85,23 @@
 </div>
 
 
-  <br>
+<div class="container">
+  <hr>
+</div>
+
+  <div class="container">
+    <h3>Searches</h3>
+    <p>Searches on "United States women's national soccer team" (top) versus "United States men's national soccer team" (bottom) 2014-2019:</p>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"mens national soccer team","geo":"US","time":"today 5-y"},{"keyword":"women's national soccer team","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=mens%20national%20soccer%20team,women's%20national%20soccer%20team","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+  </div>
+  <div class="container">
+      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"mens national soccer team","geo":"US","time":"today 5-y"},{"keyword":"women's national soccer team","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=mens%20national%20soccer%20team,women's%20national%20soccer%20team","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+
+  </div>
 
 
 
+  
 
   <div class="container text-center">
       <p><i><a href="https://github.com/eherchen/DATA_womens-soccer"><i class="fa fa-github fa-2x fa-secondary"></i></a></p>
