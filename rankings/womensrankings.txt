@@ -1,0 +1,11 @@
+date,rank,points,old_points,position_change,change_by
+12-July-2019,1,2180,2101,,,
+29-March-2019,1,2101,2123,,,
+7-December-2018,1,2123,2114,,,
+28-September-2018,1,2114,2114,,,
+22-June-2018,1,2114,2115,,,
+23-March-2018,1,2115,2114,,,
+15-December-2017,1,2114,2104,,,
+1-September-2017,1,2104,2118,,,
+23-June-2017,1,2118,2105,,,
+# https://www.fifa.com/fifa-world-ranking/ranking-table/women/
