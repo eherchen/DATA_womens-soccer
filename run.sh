@@ -1,1 +1,0 @@
-FLASK_APP=dccameras/app.py flask run
