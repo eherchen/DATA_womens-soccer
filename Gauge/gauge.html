@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=320" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Sentiment Gauge</title>
+
+	<style>
+	#head {
+		font-family:  Slabo 27px;
+		color:#edd2c0;
+		margin: 22px;
+		font-size: 50px;
+		text-align: left;
+		-webkit-text-stroke: 2px black;
+	}
+	#scale20 {
+		font-family: 'Times New Roman', Times, serif;
+		margin: 32px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	container text-center {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 42px;
+		font-size: 8px;
+	}
+	body {
+		font-family:  Helvetica, Arial, sans-serif;
+		margin: 32px;
+	}
+
+	#power-gauge g.arc {
+		fill: steelblue;
+	}
+
+	#power-gauge g.pointer {
+		fill: #e85116;
+		stroke: #b64011;
+	}
+	
+	#power-gauge g.label text {
+		text-anchor: middle - 100;
+		font-size: 12px;
+		font-family:  Impact;
+		font-weight: bold;
+		fill: #666;
+	}
+	</style>
+</head>
+<body>
+<div id="power-gauge" ></div>
+<div id="power-gauge-filter"></div>
+<div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div id="head" class="panel-heading">Sentiment Predictor</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        
+                        <li class="filter list-group-item">
+                          <label for="date">Filter by City</label>
+                          <input class="form-control" id="city" type="text" placeholder="city">
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                    <button id="un-filter-btn" type="submit" class="btn btn-default">Reset</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+		  </div>
+		</br>
+		  <div class="container text-center">
+				<span class="bottom"></span>
+		  </div>
+
+		<script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.1.0/d3-legend.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script> -->
+		<script src="scores_data.js"></script>
+		<script src="gauge_app.js"></script>
+</body>
+</html>
