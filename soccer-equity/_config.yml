@@ -1,0 +1,41 @@
+title: Soccer Equity
+# email: 
+description: This Web site is dedicated to examining equity pay in sports, beginning with Women's Soccer
+baseurl: ""
+url: ""
+# twitter_username: 
+# facebook_username: 
+github_username: eherchen/DATA_womens-soccer
+# bookurl: 
+author: TEAM-GELCAP
+disclaimer: The site is intended for informational purposes only.
+
+# paginate: 3
+# paginate_path: tspstrategies.com/blog/page:num/index.html
+
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+
+
+future: False
+
+collections:
+  - authors
+  - tspstats
+
+# Jekyll settings
+
+markdown: kramdown
+plugins: [jekyll, jekyll-seo-tag, bundler, jekyll-feed]
+encoding: utf-8
+timezone: America/Washington D.C.
+locale: "en_US"
+# permalink: /:categories/:title/
+  
+  #/:title:output_ext
+
+
+# YAML defaults
+
+

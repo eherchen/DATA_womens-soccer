@@ -1,0 +1,412 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+    padding: 20;
+    margin: 20;
+    /* overflow: hidden; */
+  }
+
+  h2 text {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .color-legend text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+  }
+  
+  .d3-tip {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    line-height: 1;
+    padding: 7px;
+    background: black;
+    color: lightgray;
+    border-radius: 20px;
+  }
+  
+  #chart {
+      width: 1200px;
+      height: 460px;
+      overflow-y: auto;
+    }
+  #legend {
+      width: 300px;
+      height: 460px;
+    }
+  #map
+    {
+     height: 100%;
+     padding-top: 400px;
+     padding-right: 30px;
+     padding-bottom: 400px;
+     padding-left: 80px;
+   
+   }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 3px;      
+    font-size: 20px;
+    color: #111;
+  }
+
+  p.small {
+    line-height: 0.8;
+  }
+
+  .container {
+    padding: 20px 20px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: salmon; <!-- #2d2d30; -->
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #f4511e; <!-- #333; -->
+    color: #000; <!-- #f1f1f1; -->
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom:12;
+    background-color: salmon; <!-- #2d2d30; -->
+    border: 8;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: red; <!-- #d5d5d5 !important; -->
+    font-size: 15px !important;
+  }
+  .navbar-nav li a:hover {
+    color: #f4511e; <!-- #fff !important; -->
+  }
+  .navbar-nav li.active a {
+    color: red; <!-- #fff !important; -->
+    background-color: #fff !important; 
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: red; <!-- #fff !important; -->
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #f4511e !important;
+  }
+  .dropdown-menu li a:hover {
+    <!-- background-color: #555 !important; -->
+  }
+  footer {
+    background-color: salmon; <!-- #2d2d30; -->
+    color: #f5f5f5;
+    padding: 42px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+  .hero {
+    position: relative;
+    height: 500px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("hero/daretoshine.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  .hero h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+    color: gold;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+    opacity: 0;
+    animation: subtitle 1.2s forwards linear;
+    animation-delay: 1.2s;
+    color: gold;
+  }
+
+  .hero2 {
+    position: relative;
+    height: 500px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("hero/WNTTeam_Champs.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  .hero2 h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+    /* color: grey; */
+  }
+  
+  .hero2 p {
+    font-size: 2rem;
+    opacity: 0;
+    animation: subtitle 1.2s forwards linear;
+    animation-delay: 1.2s;
+    /* color: grey; */
+  }
+
+
+  .hero3 {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+	height: 100vh;
+	background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url("hero/dc_panoramic.jpg") 0 0 / cover no-repeat;
+	-webkit-animation: gradientAnimation 40s ease infinite;
+    animation: gradientAnimation 40s ease infinite;
+    /* background-image: url("/assets/images/dc_panoramic.jpg"); https://picsum.photos/g/2000/1200?image=443 */
+    background-attachment: fixed;
+}
+
+.hero3 h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+    color: rgb(155, 45, 63);
+  }
+
+.hero4 {
+    
+    background-color: #2A2C39;
+    position: relative;
+    height: 550px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("hero/daretoshine2.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  .hero4 h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+    /* color: grey; */
+  }
+  .hero5 {
+    position: relative;
+    height: 500px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("hero/dc_mosaic_flag.png");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+
+@keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 7.5rem;
+      opacity: 1;
+    }
+  }
+  
+@keyframes smaller-title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 5.5rem;
+      opacity: 1;
+    }
+}
+  
+@keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+  
+.border-webkit{
+  -webkit-text-stroke: 2px black;
+}
+
+#scale20 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 32px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+#power-gauge g.arc {
+    fill: steelblue;
+}
+
+#power-gauge g.pointer {
+    fill: #e85116;
+    stroke: #b64011;
+}
+
+#power-gauge g.label text {
+    text-anchor: middle - 100;
+    font-size: 12px;
+    font-family:  Impact;
+    font-weight: bold;
+    fill: #666;
+}
+
+.footer1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 42px;
+    font-size: 8px;
+}
+
+

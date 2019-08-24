@@ -1,0 +1,5 @@
+ var recenttweets = [{'date': '2019-08-21 00:39:27.557612', tweet1': 'Who is your female role model in soccer? Tell us below!
+
+We asked a few of our #ThreeStripeLive players this same question. Watch to see what they said  (hint: a few #USWNT players made the list) pic.twitter.com/oKV7oOmMCj', 'tweet2': 'Less than three months before the 2020 Olympics start. Both the #USWNT and US Soccer had asked for the trial date to be set well after the Olympics. https://twitter.com/AndrewDasNYT/status/1163519293520338950 …', 
+'tweet3': 'On this day in 1985, a dynasty began! The #USWNT played its first game in program history... and well you know the rest . 
+#OTD, Pres. by @Tylenol. For more U.S. Soccer moments » http://ussoc.cr/otd pic.twitter.com/C4JefJY1ar', 'tweet4': 'Kate Markgraf, 1999 @FIFAWWC champion and two-time Olympic gold medalist named first GM of the #USWNT » http://ussoc.cr/kmgm pic.twitter.com/1lh7QSe0fv', 'tweet5': 'Negotiations break down between world cup champs #USWNT and the U.S. Soccer Federation over equal pay talks. @mpinoe and @ChristenPress speak out to @arobach. https://gma.abc/2N0PjgV pic.twitter.com/AZOCQS6J4D'}]

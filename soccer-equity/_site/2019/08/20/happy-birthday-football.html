@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--  header  -->
+
+    <head>
+    <title>Equity for Champions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>  -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+    <script type="text/javascript" src="/assets/js/d3.js"></script>
+        
+    <!-- for LDAs -->
+    <!-- <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script> -->
+
+    <!-- for Tweet timeline -->
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+    
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  </head>
+
+
+  
+ <body>
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/images/world-cup.svg" width="35" height="35" class="d-inline-block align-top" alt="World Cup Logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/blog.html">Blog</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visuals
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/locations.html">Locations<span class="glyphicon glyphicon-map-marker"></span></a></li>
+              <li><a href="/charts.html">Dashboards<span class="glyphicon glyphicon-signal"></span></a></li>
+              <li><a href="/gauge.html">Gauge<span class="glyphicon glyphicon-dashboard"></span></span></a></li>
+              <li><a href="/sentiment.html">Sentiment <span class="glyphicon glyphicon-heart"></span><br>Timeline</a></li>
+              <li><a href="/tweets.html"><i class="fa fa-twitter fa-1x fa-primary"></i> Visuals</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/latest.html">Latest<span class="glyphicon glyphicon-fire"></span></a></li> 
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ <!-- First Container -->
+ <div class="container">
+  <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+        <h1>Happy Birthday, Football!</h1>
+      
+        </div>
+
+        <p><i>August 20, 2019</i></p>
+        
+
+        <p>So taking a break from soccer for a moment, we should wish a big “Happy birthday” to <a href="https://www.history.com/this-day-in-history/professional-football-is-born">American football</a>”!</p>
+
+<p>Now to celebrate the very male sport of American Football, <a href="https://www.monstersandcritics.com/sport/soccer/watch-carli-lloyd-kicking-a-field-goal-from-the-55-yard-line-should-she-get-an-nfl-tryout/">read up on Carli Lloyd</a>, a member of the Women’s National Team, kicking a 55-year field goal…</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thank you to the <a href="https://twitter.com/Eagles?ref_src=twsrc%5Etfw">@Eagles</a> for having me out! Thanks to <a href="https://twitter.com/JustinTuck?ref_src=twsrc%5Etfw">@JustinTuck</a> <a href="https://twitter.com/jake_elliott22?ref_src=twsrc%5Etfw">@jake_elliott22</a> <a href="https://twitter.com/MayorRandyBrown?ref_src=twsrc%5Etfw">@MayorRandyBrown</a> for the good time and tips! 🏈 🎯 <a href="https://twitter.com/hashtag/55yd?src=hash&amp;ref_src=twsrc%5Etfw">#55yd</a> <a href="https://t.co/owZ16f46Th">pic.twitter.com/owZ16f46Th</a></p>&mdash; Carli Lloyd (@CarliLloyd) <a href="https://twitter.com/CarliLloyd/status/1163920167673442304?ref_src=twsrc%5Etfw">August 20, 2019</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+
+
+        <div class="page-header">
+
+
+        </div>
+      
+
+      </div>
+      <div class="col-sm-1">
+      </div>
+  </div>
+ </div>
+
+  <br>
+
+ </body>
+
+
+ <!-- Footer -->
+       <footer class="text-center">
+            <!-- <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up"></span> -->
+            </a><br>
+            <p><i><a href="https://github.com/eherchen/DATA_womens-soccer"><i class="fa fa-github fa-2x fa-secondary"></i></a></p>
+            <p>A web app built by <a href="https://github.com/eherchen/DATA_womens-soccer" data-toggle="tooltip" title="Visit Our Repo">Team GELCAP</a>, 2019</p> 
+        <p></p>
+    
+    </footer>
+
+</html>
+

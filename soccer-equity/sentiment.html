@@ -1,0 +1,60 @@
+---
+layout: default
+title: Sentiment Over Time
+---
+
+<div class="hero4 text-center">
+      <br>
+
+</div>
+<div class="jumbotron text-center">
+    <h1>Sentiment Over Time</h1>
+</div>
+
+
+<div class="container">
+        <p>Sentiment Analysis is the process of extracting specific words from text in an attempt to identify the writer's tone or attitude towards a given topic. This technique is becoming increasingly popular in the social media era, where writers contribute their opinions publickly and freely.   Noise words (such as if, the, and, or) are stripped out and the remaining words are lemmatized (processed through their variants, such as run/running/ran or dog/dogs), counted, mapped, and weighted then compared to a previously-evaluated sample, and a final grade is assigned. </p> 
+        <div class="container text-center">
+
+                <a class="btn btn-primary btn-lg" href="/womenstweets.html">Tweets About the USWNT</a>
+        
+        </div>
+
+        <p>These plots compare counts of positive, negative and neutral tweets regarding the USWNT and the USMNT from days near and during their respective World Cup tournaments.  Tweets were captured, cleaned, processed, inventoried, and plotted to expose sentiment trends as well as overall volume. Interestingly, the negative sentiment surrounding the USWNT increases after each won round, with a final and significant spike in negative sentiment as the team wins the Championship round; the negative sentiment level falls the next day but never returns to its original levels during the sample period. This is in contrast to the USMNT, whose negative sentiment remains fairly consistent throughout their tournament, spiking moderately as the team loses in the Championship round, then falls quickly to its original levels. </p>
+        <div class="container text-center">
+
+                <a class="btn btn-primary btn-lg" href="/menstweets.html">Tweets About the US Men's Team</a>
+        
+        </div>
+
+</div>
+
+
+
+<!-- Google Trends analysis section -->
+</div>        
+<div class="container">
+        <p>It can also be noted that the volume of tweets regarding the womens' team is consistently higher than the mens' teams, and that the overall percentage of negative tweets is also higher.</p>
+
+</div>
+<div class="container">
+        <h3>Comparions of Google Searches</h3>
+        <p>The same phenomenon appears in historical Google searches over the past five years, and since 2004.</p>  
+        <p>Here is a comparison of interest in "United States women's national soccer team" versus "United States men's national soccer team" 2014-2019:</p>
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"mens national soccer team","geo":"US","time":"today 5-y"},{"keyword":"women's national soccer team","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=mens%20national%20soccer%20team,women's%20national%20soccer%20team","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+      </div>
+      <div class="container">
+            <p>And here are states with the most interest in the topic in the past five years:</p>
+        
+          <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"mens national soccer team","geo":"US","time":"today 5-y"},{"keyword":"women's national soccer team","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=mens%20national%20soccer%20team,women's%20national%20soccer%20team","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+      </div>
+    <div class="container">
+        <h3>Comparions of Google Searches</h3>
+        <p>Comparison of interest in "United States women's national soccer team" versus "United States men's national soccer team" 2004-2019:</p>
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"mens national soccer team","geo":"US","time":"2004-01-01 2019-08-13"},{"keyword":"women's national soccer team","geo":"US","time":"2004-01-01 2019-08-13"}],"category":0,"property":""}, {"exploreQuery":"date=all&geo=US&q=mens%20national%20soccer%20team,women's%20national%20soccer%20team","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+    
+    </div>
+        
+<div class="container">
+<p><i>Built from Vader (SentimentIntensityAnalyzer) and SpaCy(NLP modules); plotted with Bokeh. </i></p>
+</div>
