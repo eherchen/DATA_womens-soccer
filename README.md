@@ -1,7 +1,5 @@
-Group project analyzing the USWNT, and NWSL Twitter Sentiment using Machine Learning
+Group project analyzing the USWNT, and NWSL Twitter Sentiment using Machine Learning.
 
-
-This project uses over 70,000 data records which were collected via geoJSON/API query and by CSV download. The data was cleaned and normalized using Python and Pandas and stored in a SQLite database. The data was analyzed looking for relationships and trends.
 
 Visualizations include:
 
