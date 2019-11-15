@@ -23,3 +23,6 @@ Tools Used:
 
 Visit the full live site, at https://soccer-equity.s3.amazonaws.com/index.html.
 
+![Alt Text](https://github.com/eherchen/DATA_womens-soccer/blob/master/sentiment_gauge.png)
+
+![Alt Text](https://github.com/eherchen/DATA_womens-soccer/blob/master/sentiment_comparisons.png)
